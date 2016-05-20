@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="FindYourCar.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html">
+<head runat="server">
+    <title>Find Your Car</title>
+    <link rel="stylesheet" href="css/StyleSheet.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id ="wrapper">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/header.png" Width="100%" />
+            <div id ="banner">
+                
+            </div>
+            <div id ="navigation">
+                <ul id ="nav">
+                    <li><asp:HyperLink ID="Hyperlink1" runat="server">HOME</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="Hyperlink2" runat="server" NavigateUrl="~/selling.aspx">SELLING</asp:HyperLink></li>                      
+                    <li><asp:HyperLink ID="Hyperlink3" runat="server" NavigateUrl="~/Renting.aspx">RENTING</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="Hyperlink4" runat="server">FORUM</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="Hyperlink5" runat="server">CONTACT</asp:HyperLink></li>
+                </ul>
+            </div>
+            <div id ="content"> 
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id ="content"> 
+                <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+                <p>© 2016 - Bản quyền của Công Ty Cổ Phần Ly Trinh - Lytrinh.vn</p>
+                <p><strong>Địa chỉ gửi hàng đổi/trả/bảo hành:</strong> Trung Tâm Xử Lý Đơn Hàng , Lô II-1, đường CN1, Khu Công Nghiệp Tân Bình, phường Tây Thạnh, Quận Tân Phú, TP. Hồ Chí Minh (Tham khảo <a href="http://tiki.vn/hau-mai" target="_blank">hướng dẫn đổi, trả, bảo hành</a> hoặc liên hệ 1900-6035 để được hướng dẫn trước khi gửi sản phẩm về)</p>
+                <p>Địa chỉ văn phòng: Khu phố 6, phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh</p>
+                <p>Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2016</p>
+            </div>
+        
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>
